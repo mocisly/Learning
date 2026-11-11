@@ -1,0 +1,12 @@
+{
+  "title": "钢琴学习与练习曲集",
+  "subtitle": "读谱、演奏与练习笔记",
+  "author": "Mocisly",
+  "year": "2026",
+  "pieces": [
+    {
+      "id": "chopin-waltz-e-minor",
+      "enabled": true
+    }
+  ]
+}

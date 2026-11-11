@@ -1,0 +1,147 @@
+{
+  "id": "chopin-waltz-e-minor",
+  "title": "肖邦：e小调圆舞曲",
+  "composer": "Frédéric Chopin",
+  "description": "B. 56，KK IVa/15，遗作",
+  "source": "source/score.ly",
+  "overview": "study/overview.tex",
+  "engraving": {
+    "staff_size": 18,
+    "line_width_mm": 164
+  },
+  "extraction": {
+    "strategy": "bar-comments",
+    "voices": {
+      "primary": "melody",
+      "accompaniment": "accompaniment",
+      "upper_support": "rightSupport",
+      "lower_support": "leftSupport"
+    },
+    "pickup_duration": "1/4",
+    "first_full_bar": 2,
+    "bar_duration": "3/4",
+    "last_bar": 136
+  },
+  "segments": [
+    {
+      "id": "01",
+      "title": "引子",
+      "first_bar": 1,
+      "last_bar": 9,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/01.tex",
+      "max_height": 0.42
+    },
+    {
+      "id": "02",
+      "title": "主主题",
+      "first_bar": 10,
+      "last_bar": 25,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/02.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "03",
+      "title": "对比段",
+      "first_bar": 26,
+      "last_bar": 41,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/03.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "04",
+      "title": "主主题回归",
+      "first_bar": 42,
+      "last_bar": 58,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/04.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "05",
+      "title": "E 大调歌唱段",
+      "first_bar": 59,
+      "last_bar": 75,
+      "key": {
+        "pitch": "e",
+        "mode": "major"
+      },
+      "lesson": "study/segments/05.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "06",
+      "title": "和弦对比段",
+      "first_bar": 76,
+      "last_bar": 83,
+      "key": {
+        "pitch": "e",
+        "mode": "major"
+      },
+      "lesson": "study/segments/06.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "07",
+      "title": "歌唱主题回归",
+      "first_bar": 84,
+      "last_bar": 100,
+      "key": {
+        "pitch": "e",
+        "mode": "major"
+      },
+      "lesson": "study/segments/07.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "08",
+      "title": "e 小调主题回归",
+      "first_bar": 101,
+      "last_bar": 112,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/08.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "09",
+      "title": "尾声推进",
+      "first_bar": 113,
+      "last_bar": 127,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/09.tex",
+      "max_height": 0.74
+    },
+    {
+      "id": "10",
+      "title": "最后收束",
+      "first_bar": 128,
+      "last_bar": 136,
+      "key": {
+        "pitch": "e",
+        "mode": "minor"
+      },
+      "lesson": "study/segments/10.tex",
+      "max_height": 0.74
+    }
+  ]
+}

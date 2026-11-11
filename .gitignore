@@ -1,0 +1,5 @@
+# Generated files and final exports (sources stay in pieces/, tex/, lilypond/).
+/build/
+/output/
+__pycache__/
+*.py[cod]

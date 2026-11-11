@@ -1,0 +1,10 @@
+{
+  "id": "new-piece",
+  "title": "新曲目",
+  "composer": "",
+  "description": "",
+  "source": "source/score.ly",
+  "overview": "study/overview.tex",
+  "engraving": { "staff_size": 18, "line_width_mm": 164 },
+  "segments": []
+}

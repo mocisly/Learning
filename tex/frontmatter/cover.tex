@@ -1,0 +1,90 @@
+\thispagestyle{empty}%清空该页内容
+\pagecolor{coverbackground}
+\color{chatgpt-bg}
+
+\begin{center}
+ \Huge    \BookTitle
+\vfill
+\includegraphics[width={.6\linewidth}]{ctanlion.eps}
+\vfill
+\end{center}
+
+\clearpage
+
+\nopagecolor
+\color{black}
+
+
+\title{\BookTitle}
+\author{\BookAuthor}
+
+\begin{titlepage} % Suppresses headers and footers on the title page
+    
+	\centering % Centre everything on the title page
+	
+	\scshape % Use small caps for all text on the title page
+	
+	\vspace*{2\baselineskip} % White space at the top of the page
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+	\vspace{0.75\baselineskip} % Whitespace above the title
+	
+    \makeatletter
+    
+	{\LARGE\bfseries \@title \\} % Title
+	
+	\vspace{0.75\baselineskip} % Whitespace below the title
+	
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+	
+	\vspace{2\baselineskip} % Whitespace after the title block
+	
+	%------------------------------------------------
+	%	Subtitle
+	%------------------------------------------------
+	
+	{\large \BookSubtitle} 
+
+	
+	\vspace*{3\baselineskip} % Whitespace under the subtitle
+	
+	%------------------------------------------------
+	%	Editor(s)
+	%------------------------------------------------
+	
+	整理
+	
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+	
+	{\scshape\Large \@author \\} % Editor list
+	
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	
+	\textit{CN} % Editor affiliation
+	
+	\vfill % Whitespace between editor names and publisher logo
+	
+    \makeatletter
+
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	
+    \newcommand{\plogo}{\fbox{$\mathcal{L\&W}$}} % Generic dummy publisher logo
+
+	\plogo % Publisher logo
+	
+	\vspace{0.3\baselineskip} % Whitespace under the publisher logo
+	
+	\BookYear % Publication year 
+
+	{\large 学习自用} % Publisher
+
+\end{titlepage}

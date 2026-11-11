@@ -1,0 +1,36 @@
+% Shared A4 layout for all pieces. Compile with LuaLaTeX.
+\usepackage[fontsize=11pt]{fontsize}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{pagecolor}
+\definecolor{chatgpt-bg}{HTML}{181818}
+\definecolor{coverbackground}{HTML}{808080}
+\graphicspath{{\ProjectRoot assets/images/}}
+\usepackage{epstopdf-base}
+\epstopdfsetup{outdir=\ProjectRoot build/cache/graphics/}
+\usepackage[tmpdir=\ProjectRoot build/cache/lyluatex]{lyluatex}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\usepackage[hidelinks]{hyperref}
+\renewcommand\thechapter{\arabic{chapter}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% Full scores keep their original notation, without letter-note labels.
+\newcommand{\FullScore}[1]{%
+  \lilypondfile[insert=systems,line-width=\linewidth,staffsize=18,indent=0pt,max-left-protrusion=0pt]{#1}%
+}
+
+% Each lesson uses this command; paths and limits come from piece.json.
+\newcommand{\SegmentScore}{%
+  \begin{center}
+  \includegraphics[clip,width=\linewidth,height=\SegmentMaxHeight\textheight,keepaspectratio]{\SegmentPDF}
+  \end{center}
+}

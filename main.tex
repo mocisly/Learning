@@ -1,0 +1,24 @@
+% !TEX program = lualatex
+\documentclass[zihao=false,linespread=1.5,heading=true,a4paper,oneside,fontset=windows]{ctexbook}
+\providecommand{\BuildTarget}{book}
+\providecommand{\ProjectRoot}{./}
+\input{\ProjectRoot tex/preamble.tex}
+\input{\ProjectRoot build/generated/\BuildTarget/metadata.tex}
+\hypersetup{pdftitle={\BookTitle},pdfauthor={\BookAuthor},pdfsubject={\BookSubtitle}}
+\begin{document}
+\hypersetup{pageanchor=false}
+\input{\ProjectRoot tex/frontmatter/cover.tex}
+\nopagecolor
+\color{black}
+\setcounter{page}{1}
+\hypersetup{pageanchor=true}
+\input{\ProjectRoot tex/frontmatter/preface.tex}
+\clearpage
+\tableofcontents
+\clearpage
+\input{\ProjectRoot tex/frontmatter/introduction.tex}
+\clearpage
+\input{\ProjectRoot build/generated/\BuildTarget/catalog.tex}
+\clearpage
+\input{\ProjectRoot tex/frontmatter/colophon.tex}
+\end{document}
